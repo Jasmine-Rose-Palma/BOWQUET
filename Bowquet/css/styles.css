@@ -1,0 +1,1366 @@
+
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    --first-color: #D7C6C6;
+    --second-color: #3A322E;
+    --fallback-color: #795F57;
+
+    /*========== Fonts ==========*/
+    --body-font: 'Montserrat', sans-serif;
+    --main-heading: 'Bayon';
+    --second-heading: 'Afacad';
+
+    /*========== Font Size ==========*/
+    --biggest-font-size: 3.5rem;
+    --body-font-size: 1.5rem;
+    --medium-font-size: 3rem;
+}
+
+/* CSS Reset */
+body, header, div, a, h1, h3, h5, p, fieldset, label, input, img, table, caption, tr, th, td, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* CSS Styles for Body */
+body {
+    background-color: var(--first-color);
+}
+
+/* CSS Styles for Header */
+header {
+    text-align: center;
+    height: 160px;
+    position: static;
+    top: 0;
+    z-index: 5;
+}
+
+header img {
+    height: 150px;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    margin: 5px auto 4%;
+}
+
+/* CSS styles for hamburger menu */
+.hb-nav a {
+    color: var(--second-color);
+    font-family: var(--biggest-font-size);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2.2rem;
+    display: block;
+}
+.hb-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.hm-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.hb-nav a:hover {
+    background-color: white;
+}
+
+a.menu-icon:hover {
+    background-color: transparent;
+}
+
+/* 
+========================================================================
+*/
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+#menu-links {
+    display: none;
+}
+
+/* CSS Styles for Welcome Section */
+.hero {
+    background-color: var(--fallback-color);
+    background-image: url(../images/home-background-image.jpg);
+    background-size: cover;
+}
+
+.hero-about {
+    background-color: var(--fallback-color);
+    background-image: url(../images/about-background-image.jpg);
+    background-size: cover;
+}
+
+.gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.656), transparent);
+    z-index: 1;
+}
+
+.hero-container {
+    padding: 22rem 3.5rem 2rem 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    gap: 3rem;
+}
+
+.desc {
+    flex: 25%;
+    flex-wrap: wrap;
+}
+
+.desc h1 {
+    font-family: var(--main-heading);
+    font-size: var(--biggest-font-size);
+    font-weight: bold;
+    letter-spacing: .3rem;
+    line-height: 4.3rem;
+    color: white;
+}
+
+.desc p {
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.shop {
+    flex: 25%;
+    flex-wrap: wrap;
+
+    padding: 1rem 0;
+    text-align: right;
+}
+
+.shop a {
+    padding: 1rem 2rem;
+    border: 3px solid white;
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.shop a:hover {
+    background-color: white;
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+/* CSS Styles for Mobile View */
+.hero-mobile-container {
+    padding: 2rem 5rem .5rem 5rem;
+}
+
+.mobile-desc h1 {
+    font-family: var(--main-heading);
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    line-height: 3rem;
+    color: var(--second-color);
+    text-align: center;
+}
+
+.mobile-desc p {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: var(--second-color);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.mobile-shop {
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+.mobile-shop a {
+    padding: 1rem 2rem;
+    border: 3px solid var(--second-color);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.mobile-shop a:hover {
+    background-color: var(--second-color);
+    color: white;
+    font-weight: bold;
+}
+
+/* CSS Styles for Shop header */
+.shop-header {
+    background-color: #D9D9D9;
+    position: sticky;
+}
+
+#bowquet-logo-black {
+    height: 130px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1em;
+    font-family: var(--second-heading);
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    width: 10em;
+    color: var(--second-color);
+    padding: .3em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav li a:hover {
+    color: var(--fallback-color);
+}
+
+/* CSS Styles for Categories Section */
+.categories-container {
+    padding: 2rem 5rem 2.5rem 5rem;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    z-index: 2;
+}
+
+.categories-container h1 {
+    font-family: var(--second-heading);
+    font-size: var(--medium-font-size);
+    text-align: center;
+    font-weight: bold;
+    color: var(--second-color);
+    padding-bottom: 2rem;
+}
+
+.categories div:hover {
+    box-shadow: 1px 1px 15px grey;
+    background-color: var(--fallback-color);
+}
+
+.img {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.scr {
+    background-color: var(--fallback-color);
+    background-image: url("../images/category-scrunchies.jpg");
+    background-size: cover;
+    font-family: var(--second-heading);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.hc {
+    background-color: var(--fallback-color);
+    background-image: url("../images/category-hair-clips.jpg");
+    background-size: cover;
+    font-family: var(--second-heading);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hb {
+    background-color: var(--fallback-color);
+    background-image: url("../images/product-headbands.jpg");
+    background-size: cover;
+    font-family: var(--second-heading);
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.txt {
+    width: 100%;
+    height: 22%;
+    background-color: var(--second-color);
+    opacity: 0.7;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+}
+
+.img a {
+    opacity: 2;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+
+/* CSS Styles for Gallery Section */
+#gallery-container {
+    height: 750px;
+    width: 100%;
+    background-color: var(--second-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+    z-index: 2;
+}
+
+.photo-1 {
+    background-color: var(--fallback-color);
+    background-image: url("../images/gallery-photo-1.jpg");
+    background-size: cover;
+    width: 35%;
+    height: 95%;
+    z-index: 3;
+}
+
+.photo-2 {
+    background-color: var(--fallback-color);
+    background-image: url("../images/gallery-photo-2.jpg");
+    background-size: cover;
+    width: 70%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.photo-2 h1 {
+    padding-left: 3rem;
+    padding-top: .5rem;
+    font-family: var(--main-heading);
+    letter-spacing: 3px;
+    font-size: 5.5rem;
+    color: var(--second-color);
+}
+
+.photo-2 a {
+    margin-left: 3.1rem;
+    background-color: var(--second-color);
+    opacity: 0.9;
+    border-radius: 40px;
+    padding: 1.5rem 2rem;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+
+.photo-2 div:hover {
+    transform: scale(1.1);
+}
+
+/* CSS Styles for the Best Sellers Section */
+.bs-container {
+    padding: 2rem 5rem 2.5rem 5rem;
+}
+
+.bs-container h1 {
+    padding-bottom: 2rem;
+    font-family: var(--second-heading);
+    font-size: var(--medium-font-size);
+    text-align: center;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.best-sellers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+}
+
+.bsimg {
+    background-color: white;
+    border-radius: 15px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 15%;
+}
+
+.bsimg:hover {
+    box-shadow: 5px 5px 8px grey;
+    opacity: 0.8;
+}
+
+.bsimg a {
+    padding: 1rem 1.9rem;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+#bold {
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: var(--second-heading);
+    padding-bottom: .4rem;
+    text-decoration: none;
+}
+
+.cs-clip {
+    background-color: var(--fallback-color);
+    background-image: url("../images/product-creaseless-clip.jpg");
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 78%;
+    width: 100%;
+}
+
+.cl-clip {
+    background-color: var(--fallback-color);
+    background-image: url("../images/product-claw-clip.jpg");
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 78%;
+    width: 100%;
+}
+
+.scr-silk {
+    background-color: var(--fallback-color);
+    background-image: url("../images/product-silk-scrunchies.jpg");
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 78%;
+    width: 100%;
+}
+
+.sn-clip {
+    background-color: var(--fallback-color);
+    background-image: url("../images/product-soft-scrunchies.jpg");
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 78%;
+    width: 100%;
+}
+
+/* CSS Styles for Order Form Page */
+.order-container {
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.order-container label {
+    display: block;
+    margin: 1em auto;
+    color: var(--first-color);
+}
+
+.order-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    color: var(--first-color);
+}
+
+#order-form {
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    border-radius: 15px;
+    background-color: #3a322eac;
+}
+
+.mop-legend {
+    color: var(--first-color);
+}
+
+.order-container input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.5em;
+    border-radius: 0.5em;
+    border: none;
+    padding: .5rem .7rem;
+}
+
+.inline {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inline input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+.inline:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.inline input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.inline input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.inline .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#order {
+    display: inline-block;
+    min-width: 100px;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--second-color);
+    background-color: var(--first-color);
+}
+
+#order:hover {
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+
+/* CSS Styles for Forms Section */
+.form-container {
+    background-color: var(--fallback-color);
+    opacity: 0.9;
+    width: 100%;
+    padding: 2.5rem 3.5rem 2rem 3.5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.update-form {  
+    flex: 70%;
+}
+
+.update-form h3 {
+    padding-bottom: 1.8rem;
+    letter-spacing: 4px;
+    text-align: left;
+    font-family: var(--second-heading);
+    font-size: 1.8rem;
+    color: var(--first-color);
+}
+
+.update-form a {
+    color: var(--first-color);
+}
+
+#terms-and-conditions {
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    box-shadow: inset 1px 1px 15px 1px grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.label-txt {
+    font-family: var(--body-font);
+    color: var(--first-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.padding {
+    padding-bottom: 1em;
+}
+
+#email {
+    height: 3rem;
+    width: 60%;
+    padding: .1rem 1rem;
+    border-radius: 8px;
+    box-shadow: inset 3px 3px 15px 3px grey;
+    background-color: white;
+    border: 1px solid grey;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    color: gray;
+}
+
+.btn {
+    background-color: var(--second-color);
+    border: 0;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: bold;
+    height: 3rem;
+    width: 60%;
+    padding: .1rem 1rem;
+}
+
+.contact-us {
+    flex: 30%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    padding-bottom: 1.5rem;
+    gap: 2rem;
+}
+
+.icons img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.contact-us h5 {
+    font-family: var(--second-heading);
+    font-size: 1.5rem;
+    color: var(--first-color);
+    padding-left: 1rem;
+    padding-bottom: .3rem;
+    text-align: right;
+}
+
+.contact-us a {
+    font-family: var(--second-heading);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3A322E;
+    text-decoration: none;
+}
+
+.contact-us p {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    text-align: right;
+}
+
+/* CSS Styles for Footer */
+.copyright {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.copyright p {
+    font-family: var(--body-font);
+    font-size: .9rem;
+    color: white;
+}
+
+/* CSS Style for Product-Bundle Section */
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CSS Styles for Shop Products Section */
+.products-container {
+    width: 65%;
+    padding: 2rem 3.5rem 2rem 3.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ctn {
+    flex: 40%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ctn:nth-child(2) {
+    flex: 40%;
+    flex-wrap: wrap; 
+}
+
+.ctn:nth-child(3) {
+    flex: 40%;
+    flex-wrap: wrap;
+}
+
+.prod-heading {
+    padding-bottom: 1rem;
+    font-family: var(--second-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.prodcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex: 1;
+    gap: 1rem;
+}
+
+.primg {
+    background-color: white;
+    border-radius: 15px;
+    height: 320px;
+    width: 260px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.primg a {
+    width: 85%;
+    padding: .8rem .5rem .8rem .5rem;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+.primg:hover {
+    box-shadow: 3px 3px 10px 1px rgb(89, 89, 89);
+}
+
+.prod-silk {
+    background-color: var(--fallback-color);
+    background-image: url(../images/product-silk-scrunchies.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+.prod-soft {
+    background-color: var(--fallback-color);
+    background-image: url(../images/product-soft-scrunchies.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+.prod-pearl {
+    background-color: var(--fallback-color);
+    background-image: url(../images/product-headbands.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+.prod-plastic {
+    background-color: var(--fallback-color);
+    background-image: url(../images/product-plastic-headbands.png);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+.prod-glit {
+    background-color: var(--fallback-color);
+    background-image: url(../images/product-creaseless-clip.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+.prod-claw {
+    background-color: var(--fallback-color);
+    background-image: url(../images/product-claw-clip.jpg);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    width: 100%;
+}
+
+#get {
+    width: 100%;
+    padding: .3rem 0;
+    background-color: var(--second-color);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 18px;
+}
+
+#get:hover {
+    background-color: var(--fallback-color);
+}
+
+/* CSS Styles for Bundles Section */
+.bundle-container {
+    width: 35%;
+    background-color: #795f576f;
+    border-left: 2px solid var(--fallback-color);
+}
+
+.bundle-container h1 {
+    padding-left: 3.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: var(--second-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.bundles {
+    height: 150px;
+    padding: 0 3.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 2rem;
+}
+
+.bnimg {
+    background-color: white;
+    height: 100%;
+    width: 260px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.bnimg:hover {
+    box-shadow: 3px 3px 10px 1px rgb(89, 89, 89);
+}
+
+.bn-sr {
+    background-color: var(--fallback-color);
+    background-image: url(../images/bundle-sweet-romance.png);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 60%;
+    width: 100%;
+}
+
+.bn-d {
+    background-color: var(--fallback-color);
+    background-image: url(../images/bundle-daylight.png);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 60%;
+    width: 100%;
+}
+
+.bn-al {
+    background-color: var(--fallback-color);
+    background-image: url(../images/bundle-august-leaves.png);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 60%;
+    width: 100%;
+}
+
+.bn-mk {
+    background-color: var(--fallback-color);
+    background-image: url(../images/bundle-mikrokosmos.png);
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    height: 60%;
+    width: 100%;
+}
+
+.bntxt {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(22, 22, 22, 0.838), transparent);
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.bntxt a {
+    font-family: var(--second-heading);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.bn-desc {
+    width: 90%;
+    padding-top: 1.1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#bn-bold a {
+    font-family: var(--second-heading);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+#bn-get a {
+    padding: .2rem 1.2rem;
+    border: 3px solid var(--second-color);
+    border-radius: 18px;
+    font-family: var(--second-heading);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+#bn-get a:hover {
+    background-color: var(--second-color);
+    color: white;
+}
+
+/* CSS Styles for Bundles Table Section */
+.bundle-table-container {
+    background-color: var(--fallback-color);
+    background-image: url(../images/about-background-image.jpg);
+    background-size: cover;
+    padding: 1.5rem 3.5rem 2.5rem 3.5rem;
+}
+
+.bundle-table-container table { 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bundle-table-container caption {
+    background-color: transparent;
+    padding: 1rem 0 2rem 0;
+
+    font-family: var(--second-heading);
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 5px #0000009c;
+    color: var(--first-color);
+}
+
+.bundle-table-container th {
+    background-color: white;
+    padding: .3rem 0;
+
+    font-family: var(--main-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    color: var(--second-color);
+    border: 3px solid white;
+}
+
+th:nth-child(1) {
+    width: 70%;
+}
+
+.bundle-table-container td {
+    background-color: rgba(255, 255, 255, 0.61);
+    padding: .8rem 2.5rem;
+
+    font-family: var(--second-heading);
+    font-size: 1.3rem;
+    color: var(--second-color);
+    border: 3px solid white;
+}
+
+td:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 
+========================================================================
+*/
+/* MEDIA QUERY FOR TABLET VIEWPORT */
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+@media screen and (max-width: 790px) {
+    /* Tablet Viewport: Style rules for categories section */
+    #tablet-desktop {
+        display: none;
+    }
+
+    #gallery-container {
+        display: none;
+    }
+
+    .categories-container {
+        background-color: #3a322ea3;
+    }
+
+    .categories-container h1 {
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+
+    .img {
+        height: 100px;
+        flex: 50%;
+        border-radius: 15px;
+    }
+
+    .txt {
+        height: 100%;
+        background-color: rgba(39, 39, 39, 0.623);
+        border-radius: 15px;
+    }
+
+    .categories div:hover {
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.227);
+        background-color: var(--fallback-color);
+    }
+
+    .bs-container h1 {
+        font-size: 2rem;
+    }
+
+    .bsimg {
+        flex: 40%;
+    }
+
+    .update-form h3 {
+        font-size: 1.3rem;
+    }
+
+    .label-txt {
+        font-size: 1rem;
+    }
+
+    .contact-us h5 {
+        font-size: 1rem;
+    }
+
+    .contact-us a {
+        font-size: 1rem;
+    }
+
+    #order-form {
+        width: 70%;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 10px;
+    }
+
+    .icons {
+        gap: .5rem;
+    }
+
+    .icons img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #terms-and-conditions {
+        height: 15px;
+        width: 15px;
+    }
+
+    .padding {
+        padding-bottom: .5rem;
+        padding-top: .1rem;
+    }
+
+    #email {
+        height: 30px;
+        width: 70%;
+        border-radius: 2px;
+        font-size: .5rem;
+    }
+
+    #submit {
+        height: 30px;
+        width: 70%;
+        border-radius: 2px;
+        font-size: .5rem;
+    }
+
+    .copyright {
+        height: 50px;
+    }
+
+    .copyright p {
+        font-size: .5rem;
+    }
+}
+
+/* 
+========================================================================
+*/
+/* MEDIA QUERY FOR MOBILE VIEWPORT */
+@media screen and (max-width: 500px) {
+    .hero-container {
+        display: none;
+    }
+
+    #gallery-container {
+        display: none;
+    }
+
+    .hero-mobile-container {
+        padding: 1.5rem 1.8rem 0 1.8rem;
+    }
+
+    .mobile-desc h1 {
+        font-size: 1.8rem;
+    }
+
+    .mobile-desc p {
+        font-size: .8rem;
+    }
+
+    #menu-links a {
+        font-size: .8rem;
+        padding: 1.5rem;
+    }
+
+    #bowquet-logo img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .hm-icon {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    video {
+        display: none;
+    }
+
+    .hero, .gradient {
+        height: 200px;
+    }
+
+    .mobile-shop a {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .categories-container {
+        background-color: #3a322ea3;
+        padding: 1rem 1.5rem;
+    }
+
+    .categories-container h1 {
+        font-size: 1.5rem;
+        color: var(--first-color);
+        padding-bottom: 1rem;
+    }
+
+    .img {
+        height: 100px;
+        flex: 60%;
+        border-radius: 15px;
+        padding: 0;
+    }
+
+    .txt {
+        height: 100%;
+        background-color: rgba(39, 39, 39, 0.623);
+        border-radius: 15px;
+    }
+
+    .txt a {
+        font-size: 1.2rem;
+    }
+
+    .bs-container {
+        padding: 1rem 1.5rem;
+    }
+
+    .bs-container h1 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .bsimg {
+        flex: 40%;
+        height: 150px;
+        width: 150px;
+        gap: 1.3rem;
+    }
+
+    .bsimg p {
+        font-size: .5rem;
+    }
+
+    .bsimg a {
+        padding: .1rem 1rem;
+        height: 20%;
+    }
+
+    #bold {
+        font-size: .5rem;
+    }
+
+    .update-form h3 {
+        font-size: 1rem;
+    }
+
+    .label-txt {
+        font-size: .5rem;
+    }
+
+    #order-form {
+        width: 80%;
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        border-radius: 5px;
+    }
+
+    .icons {
+        gap: .5rem;
+    }
+
+    .icons img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .contact-us h5 {
+        font-size: .5rem;
+        padding: .1rem 0;
+    }
+
+    .contact-us a {
+        font-size: .5rem;
+        padding: .1rem 0;
+    }
+
+    .form-container {
+        padding: 1rem 1.5rem;
+    }
+
+    .update-form h3 {
+        padding-bottom: .8rem;
+    }
+
+    #terms-and-conditions {
+        height: 15px;
+        width: 15px;
+    }
+
+    .padding {
+        padding-bottom: .5rem;
+        padding-top: .1rem;
+    }
+
+    #email {
+        height: 20px;
+        width: 70%;
+        border-radius: 2px;
+        font-size: .5rem;
+    }
+
+    #submit {
+        height: 20px;
+        width: 70%;
+        border-radius: 2px;
+        font-size: .5rem;
+    }
+
+    .copyright {
+        height: 50px;
+    }
+
+    .copyright p {
+        font-size: .5rem;
+    }
+}
+
+/* 
+========================================================================
+*/
+/* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1000px) {
+    #mobile-view {
+        display: none;
+    }
+}
