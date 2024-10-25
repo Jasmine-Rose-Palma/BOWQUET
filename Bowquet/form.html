@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title> Bowquet | Order Form </title>
+        <meta charset="utf-8">
+
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/> 
+        <meta name = "description" content = "Bowquet is an online hair accessory store dedicated to offering comfortable yet trendy designs."/>
+
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
+        
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- HAMBURGER NAV -->
+            <nav class = "hb-nav">
+                <div id = "menu-links">
+                    <a href = "index.html" target="_blank"> HOME </a>
+                    <a href = "about.html" target="_blank"> ABOUT US </a>
+                    <a href = "shop.html" target="_blank"> SHOP </a>
+                    <a href = "form.html" target="_blank"> ORDER </a>
+                    <a href = "#contact"> CONTACT </a>                
+                </div>
+                <a class = "menu-icon" onclick = "hamburger()">
+                    <div><img class="hm-icon" src="images/hamburger-menu-icon.png"></div>
+                </a>
+            </nav>
+
+            <!-- HEADER -->
+            <div class="hero">
+                <div class="gradient">
+                    <header id = "bowquet-logo">
+                        <a href = "index.html">
+                            <img src = "images/bowquet-logo-white.png" alt = "Bowquet Logo"/>
+                        </a>   
+                    </header>                  
+                </div>             
+            </div>
+
+            <!-- ORDER FORM SECTION -->
+            <div class="order-container">
+                <form id="order-form">
+                    <fieldset>
+                        <legend class="order-heading">ORDER FORM</legend>
+
+                        <label for="name" id="name-label">Name:<input id="name" type="text" required placeholder="Enter your name"></label>
+                    
+                        <label for="or-email" id="or-email-label">Email:<input id="or-email" type="email" required placeholder="Enter your email"></label>
+        
+                        <label for="address" id="address-label">Address: <input id="address" type="text" placeholder ="Enter your address" required></label>
+        
+                        <label for="dropdown">Product to Purchase:
+                        <select id="dropdown">
+                            <option value="">Select Product</option>
+                            <option value="1">Silk Scrunchie</option>
+                            <option value="1">Soft Scrunchie</option>
+                            <option value="2">Pearl Headband</option>
+                            <option value="3">Plastic Headband</option>
+                            <option value="4">Glittery Creaseless Clip</option>
+                            <option value="5">Pastel Claw Clip</option>
+                            <option value="5">None</option>
+                        </select>
+                        </label>
+
+                        <label for="dropdown">Bundle to Purchase:
+                            <select id="dropdown">
+                                <option value="">Select Bundle</option>
+                                <option value="1">Sweet Romance Bundle</option>
+                                <option value="1">Daylight Bundle</option>
+                                <option value="2">August Leaves Bundle</option>
+                                <option value="3">Mikrokosmos Bundle</option>
+                                <option value="4">None</option>
+                            </select>
+                        </label>
+
+                        <label for="quantity" id="quantity-label">Quantity: <input id="quantity" type="number" min="1" max="10" placeholder ="Quantity" required></label>
+                    </fieldset>
+
+                    <legend class="mop-legend">Select Mode of Payment:</legend>
+                    <label class="inline">Cash on Delivery
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="inline">Online Payment
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="inline">Credit/Debit Card
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <fieldset>
+                        <label for="feedback">For further details:
+                            <textarea id="feedback" name="feedback" rows="3" cols="60" placeholder="Enter additional details"></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="submit" value = "ORDER" id="order">
+                </form>
+            </div>
+            
+
+            <!-- FORMS SECTION -->
+            <div class="form-container" id="contact">
+                <div class="update-form">
+                    <h3>Keep yourself updated:</h3>
+                    <form class="form-grid"> 
+                        <fieldset class="padding">
+                            <input type="checkbox" id="terms-and-conditions" name="tnc" value="Terms and Conditions" required/>
+                            <label class="label-txt" for="terms-and-conditions">I agree to the <a href="">Terms and Conditions</a></label>
+                        </fieldset>
+                        <fieldset class="padding">
+                            <label for="email"> </label>
+                            <input type="email" id="email" name="email" placeholder="email address" required/>
+                        </fieldset>
+                        <input type="submit" id="submit" value="SUBMIT" class="btn"/>                        
+                    </form>
+                </div>
+                <div class="contact-us">
+                    <div class="icons">
+                        <div class="ic"><img src="images/instagram-icon.png" alt="Instagram Icon"></div>
+                        <div class="ic"><img src="images/twitter-icon.png" alt="Twitter Icon"></div>
+                        <div class="ic"><img src="images/facebook-icon.png" alt="Facebook Icon"></div>
+                    </div>
+                    <h5>Contact Us:</h5>
+                    <p><a href="tel:0995-524-7194">0995-524-7194</a></p>
+                    <h5>Email Us:</h5>
+                    <p><a href="mailto:bowquetph@gmail.com">bowquetph@gmail.com</a></p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="copyright">
+                    <p> &copy; Copyright 2024. All rights reserved. Created by Jasmine Palma </p>             
+                </div>
+            </footer>
+        </div>
+
+        <script src="scripts/script.js"></script>
+
+    </body>
+</html>
