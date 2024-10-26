@@ -1556,7 +1556,7 @@ td:nth-child(2) {
 ========================================================================
 */
 /* MEDIA QUERY FOR DESKTOP VIEWPORT */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
     #mobile-view {
         display: none;
     }
